@@ -1,0 +1,53 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+table {
+  border: solid;
+}
+
+td {
+  border: solid;
+}
+
+th {
+  border: solid;
+}
+
+#flightNo {
+  text-align: center;
+}
+
+nav {
+  background-color: brown;
+  margin: 50px;
+  padding: 50px;
+}
+
+/* views/flights/show */
+
+#show-page {
+  color: black;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 1rem;
+}
+
+#show-page div:nth-child(even) {
+  font-weight: bold;
+}
+
+#add-destinations-form * {
+  font-size: 20px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+#showArrival {
+  width: 500px;
+}

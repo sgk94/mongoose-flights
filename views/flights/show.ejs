@@ -44,5 +44,32 @@
   <% } else { %>
     <h5>No destination</h5>
   <% } %>
+  
+<br><br>
+ <a href="/flights/<%=flight._id%>/tickets/new">ADD TICKET</a>
+  <% if (ticket.length) { %>
+    <table>
+      <thead>
+        <tr>
+          <th>Seat</th>
+          <th>Price</th>
+          <th>Flight</th>
+          <th>Delete</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% ticket.forEach(function(t) { %>
+          <tr>
+            <td><%= t.seat%></td>
+            <td id="showPrice"><%= t.price%></td>
+            <td><%= t.flight%></td>
+            <td><button>delete</button></td>
+          </tr>
+          <% }); %>
+        </tbody>
+      </table>
+      <% } else { %>
+        <h5>No Ticket</h5>
+        <% } %> 
 
 <%- include('../partials/footer') %>
